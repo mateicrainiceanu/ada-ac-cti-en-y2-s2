@@ -2,9 +2,9 @@ package data;
 
 import java.time.LocalDate;
 
-public record Person(String id, String firstName, String lastName, LocalDate birthDate) {
+public record Person(String id, String firstName, String lastName, LocalDate birthDate, boolean prioritized) {
     @Override
     public String toString() {
-        return "Person {" + id + " " + firstName + " " + lastName + " " + birthDate + "}\n";
+        return "Person {" + id + " " + firstName + " " + lastName + " " + birthDate + prioritized +"}\n";
     }
 }
