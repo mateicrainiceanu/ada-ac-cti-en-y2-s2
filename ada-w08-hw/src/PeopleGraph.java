@@ -52,7 +52,7 @@ public class PeopleGraph {
         graph.addUndirectedEdge(idx1, idx2);
     }
 
-    // BFS from startNode, marks visited nodes and returns the component members
+
     private ArrayList<String> bfsComponent(int startNode, boolean[] visited) {
         ArrayList<String> component = new ArrayList<>();
         Queue<Integer> queue = new LinkedList<>();
