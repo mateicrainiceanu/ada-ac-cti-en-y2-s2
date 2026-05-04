@@ -21,7 +21,7 @@ public class CollaborationGraph {
         try {
             Scanner input = new Scanner(new File(filename));
             ArrayList<String[]> articles = new ArrayList<>();
-            LinkedHashSet<String> uniqueScientists = new LinkedHashSet<>();
+            LinkedHashSet<String> uniqueScientists = new LinkedHashSet<>(); // preserves the order and also removes duplicates
 
             while (input.hasNextLine()) {
                 String line = input.nextLine().trim();
