@@ -7,6 +7,5 @@ public class Main1 {
 
         PeopleGraph peopleGraph = PeopleGraph.fromFile(FILENAME);
         peopleGraph.printBiggestInfluenceGroup();
-
     }
 }
